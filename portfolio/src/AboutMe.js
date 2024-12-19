@@ -1,3 +1,32 @@
+import { Experience } from "./components/Experience";
+
+const experiences = [
+  {
+    title: "Computer Science Tutor: Vanier College",
+    reponsibilites: [
+      "Offered Computer Science and Math tutoring to support student autonomy and improved grades.",
+      "Demonstrated patience and empathy while tutoring, and propose strategies to help students better comprehend problem solving effectively"
+    ]
+  },
+  {
+    title: "Software Engineer: LiteBreeze InfoTech",
+    reponsibilites: [
+      "Spearheaded the development of an innovative browser-based video editing tool leveraging FFmpeg, which reduced video editing and processing times by over 50%, driving efficiency for potential clients.",
+      "Streamlined the ReactJS developer recruitment process, enhancing candidate success rates by 40% through evaluation and optimization strategies.",
+      "Contributed as a front-end UI/UX engineer, delivering design and technical support to enhance user experiences and align interfaces with client expectations."
+    ]
+  },
+  {
+    title: "Software Engineer: TeroNext Consulting",
+    reponsibilites: [
+      "Contributed to creating and developing UIs as a SaaS solution for Yembo Inc, a US-based client.",
+      "Delivered high-performance and intuitive interfaces using ReactJS. Automated test suites with Cypress, improving deployment efficiency and reducing application crashes by over 30%.",
+      "Enhanced the UI/UX experience by implementing intuitive design principles and integrating a seamless video upload functionality, boosting user satisfaction and reducing wait times by 40%."
+    ]
+  },
+].map(({ title, reponsibilites }) => <li><Experience title={title} reponsibilites={reponsibilites} /></li>)
+
+
 function AboutMe() {
   return (
     <div>
@@ -22,9 +51,7 @@ function AboutMe() {
       <section>
         <h2>Professional Experience</h2>
         <ul>
-          <li>Computer Science Tutor: Vanier College</li>
-          <li>Software Engineer: LiteBreeze InfoTech</li>
-          <li>Software Engineer: TeroNext Consulting</li>
+          {experiences}
         </ul>
       </section>
       <section>
