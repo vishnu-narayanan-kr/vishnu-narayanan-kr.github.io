@@ -30,7 +30,7 @@ function AboutMe() {
       <section>
         <h2>Education</h2>
         <ul>
-          <li>Attestation d'études Collgiels, Software Application Specialist</li>
+          <li>Attestation of College Studies, Software Application Specialist</li>
           <li>Bachelor's Electrical and Electronics Engineering</li>
         </ul>
       </section>
