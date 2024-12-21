@@ -1,4 +1,10 @@
 import { Experience } from "./components/Experience";
+import profileImage from "./media/profile-img.jpg";
+
+import { TfiEmail } from "react-icons/tfi";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaSquarePhone } from "react-icons/fa6";
 
 const experiences = [
   {
@@ -24,29 +30,28 @@ const experiences = [
       "Enhanced the UI/UX experience by implementing intuitive design principles and integrating a seamless video upload functionality, boosting user satisfaction and reducing wait times by 40%."
     ]
   },
-].map(({ title, reponsibilites }) => <li><Experience title={title} reponsibilites={reponsibilites} /></li>)
+].map(({ title, reponsibilites }) => <li key={title}><Experience title={title} reponsibilites={reponsibilites} /></li>)
 
 
 function AboutMe() {
   return (
-    <div>
-      <h1>About Me</h1>
+    <div className="about-me">
+      <img src={profileImage} alt="profile-image" className="profile-img"/>
+      <h1 className="profile-name">Vishnu Narayanan</h1>
       <section>
         <h2>Introduction</h2>
-          <p>
+          <p className="intro">
             I'm a passionate, curious, and dedicated full stack web developer and desktop app developer, with 3 years of experience in coding and software engineering. Currently pursuing a Postgraduate Diploma in Software Application Specialist at Vanier College, Montréal, with expected graduation in August 2025. I possess excellent communication skills in English and am proficient in French. My strong academic background complements my technical expertise, allowing me to excel in both professional and educational environments.
           </p>
       </section>
       <section>
         <h2>Skills</h2>
-          <p>
-            <ul>
-              <li>ReactJS</li>
-              <li>Spring Boot</li>
-              <li>.NET</li>
-              <li>Python</li>
-            </ul>
-          </p>
+          <ul>
+            <li>ReactJS</li>
+            <li>Spring Boot</li>
+            <li>.NET</li>
+            <li>Python</li>
+          </ul>
       </section>
       <section>
         <h2>Professional Experience</h2>
@@ -70,12 +75,13 @@ function AboutMe() {
           <li>Language Translator Plugin</li>
         </ul>
       </section>
-      <section>
+      <section className="contact-information">
         <h2>Contact Information</h2>
         <ul>
-          <li>narayanan.vishnu.kr@gmail.com</li>
-          <li>Linked In</li>
-          <li>Github.io</li>
+          <li><TfiEmail /><a href="mailto:narayanan.vishnu.kr@gmail.com">narayanan.vishnu.kr@gmail.com</a></li>
+          <li><FaLinkedin /><a href="https://www.linkedin.com/in/vishnu-narayanan-05b167193/" target="_blank" rel="noopener noreferrer">Linked In</a></li>
+          <li><FaGithub /><a href="https://github.com/vishnu-narayanan-kr" target="_blank" rel="noopener noreferrer">Github.io</a></li>
+          <li><FaSquarePhone /><a href="tel:+14388558478">+1 (438) 855-8478</a></li>
         </ul>
       </section>
     </div>

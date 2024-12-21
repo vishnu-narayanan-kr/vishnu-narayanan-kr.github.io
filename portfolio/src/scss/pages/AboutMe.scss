@@ -1,0 +1,30 @@
+.about-me {
+    .profile-img {
+        height: 50vw;
+        width: 50vw;
+        max-height: 400px;
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+        outline: $border-thickness solid $success;
+        outline-offset: $padding-heading;
+    }
+
+    .profile-name {
+        margin: $padding-heading auto;
+        font-size: 3rem;
+    }
+
+    p.intro {
+        text-indent: 2rem;
+    }
+
+    .contact-information {
+        svg {
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+    }
+}

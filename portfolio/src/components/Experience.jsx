@@ -5,7 +5,7 @@ export const Experience = (props) => {
         <>
             <span>{title}</span>
             <ul>
-                {reponsibilites.map(r => <li>{r}</li>)}
+                {reponsibilites.map((r, i) => <li key={i}>{r}</li>)}
             </ul>
         </>
     )
