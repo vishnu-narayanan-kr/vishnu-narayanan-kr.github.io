@@ -14,7 +14,8 @@ const experiences = [
     time: "September 2023 - August 2025",
     reponsibilites: [
       "Offered Computer Science and Math tutoring to support student autonomy and improved grades.",
-      "Demonstrated patience and empathy while tutoring, and propose strategies to help students better comprehend problem solving effectively"
+      "Demonstrated patience and empathy while tutoring, and propose strategies to help students better comprehend problem solving effectively",
+      "Recieved CRLA Level 1 Tutor Certification, ensuring adherence to best practices in tutoring and student support.",
     ]
   },
   {
@@ -88,6 +89,8 @@ function AboutMe() {
             <li>Spring Boot | Java</li>
             <li>ASP.NET | C#</li>
             <li>Django | Python</li>
+            <li>Language Proficiency: French(B2) | English(C1)</li>
+            <li>CRLA level 1 Tutor Certification</li>
           </ul>
       </section>
       <section>
