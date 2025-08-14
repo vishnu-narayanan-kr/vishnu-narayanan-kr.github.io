@@ -8,6 +8,16 @@ import { FaGithub } from "react-icons/fa";
 import { FaSquarePhone } from "react-icons/fa6";
 
 const experiences = [
+    {
+    title: "Full-Stack Developer Intern: Yulcom Technologies",
+    location: "Montréal, Canada",
+    time: "May 2025 - July 2025",
+    reponsibilites: [
+      "Developed and integrated Django REST APIs with PostgreSQL for healthcare data management.",
+      "Built and optimized React components for patient records and appointment scheduling.",
+      "Customized and extended OpenMRS modules to support new healthcare workflows.",
+    ]
+  },
   {
     title: "Computer Science Tutor: Vanier College",
     location: "Montréal, Canada",
@@ -79,7 +89,9 @@ function AboutMe() {
       <section>
         <h2>Introduction</h2>
           <p className="intro">
-            I'm a passionate, curious, and dedicated full stack web developer, with more than 3 years of experience in coding and software engineering. Currently pursuing a Postgraduate Diploma in Software Application Specialist at Vanier College, Montréal, with expected graduation in August 2025. I possess excellent communication skills in both English and French. My strong academic background complements my technical expertise, allowing me to excel in both professional and educational environments.
+            I'm a passionate, curious, and dedicated full stack web developer, with more than 3 years of experience in software engineering. Currently pursuing Postgraduate Diploma in Software Application Specialist at Vanier College, Montréal, with expected graduation in August 2025. 
+            I'm also passionate about teaching and mentoring, having served as a Computer Science tutor at Vanier College, where I helped students improve their understanding of complex concepts and achieve better grades.
+            I possess excellent communication skills in both English and French. My goal is to leverage my skills and experience to contribute to innovative projects that make a positive impact.
           </p>
       </section>
       <section>
@@ -89,6 +101,7 @@ function AboutMe() {
             <li>Spring Boot | Java</li>
             <li>ASP.NET | C#</li>
             <li>Django | Python</li>
+            <li>PostgreSQL | MS SQL Server</li>
             <li>Language Proficiency: French(B2) | English(C1)</li>
             <li>CRLA level 1 Tutor Certification</li>
           </ul>
