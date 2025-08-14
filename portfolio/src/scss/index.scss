@@ -1,3 +1,9 @@
 @import "./fonts.css";
 @import "./theme.scss";
 @import "./pages/AboutMe.scss";
+@import "./pages/Experience.scss";
+
+body {
+    background-image: url("../media/bg-pattern.png");
+    background-blend-mode: multiply;
+}
