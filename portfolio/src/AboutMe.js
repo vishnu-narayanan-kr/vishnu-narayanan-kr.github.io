@@ -21,7 +21,7 @@ const experiences = [
   {
     title: "Computer Science Tutor: Vanier College",
     location: "Montréal, Canada",
-    time: "September 2023 - August 2025",
+    time: "January 2024 - April 2025",
     reponsibilites: [
       "Offered Computer Science and Math tutoring to support student autonomy and improved grades.",
       "Demonstrated patience and empathy while tutoring, and propose strategies to help students better comprehend problem solving effectively",
